@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sénégal Excursion - Explorez l'authenticité</title>
+    <meta name="description" content="Découvrez le Sénégal avec un chauffeur professionnel. Excursions au Lac Rose, Gorée, Saint-Louis et plus." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            colors: {
+              brand: {
+                sunset: '#FDB813', // Warm yellow/orange from the sun in the logo
+                dark: '#1a1a1a',   // Silhouette black
+                sand: '#f8f5f2',   // Light background color
+                accent: '#E09900'  // Darker shade of sunset for hovers
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .font-serif-logo {
+        letter-spacing: 0.1em;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "pocketbase": "https://esm.sh/pocketbase@^0.26.8",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.22.3",
+    "@emailjs/browser": "https://esm.sh/@emailjs/browser@4.3.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-brand-sand text-brand-dark antialiased">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
