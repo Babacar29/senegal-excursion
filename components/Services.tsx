@@ -5,8 +5,8 @@ import { usePageSEO } from '../hooks/usePageSEO';
 
 const Services: React.FC = () => {
   usePageSEO(
-    "Nos Services & Tarifs Chauffeur Privé au Sénégal",
-    "Découvrez nos prestations de transport VTC au Sénégal : Transfert Aéroport AIBD, excursions touristiques et mise à disposition chauffeur. Tarifs fixes et transparents pour un voyage sans surprise."
+    "Excursion Sénégal - Découverte & Services de Transport",
+    "Découvrez nos excursions au Sénégal et profitez d'une immersion locale totale. Découverte de paysages uniques, transferts sécurisés et services de chauffeur pour vos excursions."
   );
 
   const mainServices = [

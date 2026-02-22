@@ -6,8 +6,8 @@ import { usePageSEO } from '../hooks/usePageSEO';
 
 const Gallery: React.FC = () => {
   usePageSEO(
-    "Excursions au Sénégal en Images - Galerie Photos & Vidéos",
-    "Découvrez les plus beaux paysages du Sénégal : Gorée, Sine-Saloum, Bandia et Fathala. Visionnez notre galerie photos et vidéos pour préparer votre prochain voyage."
+    "Découverte du Sénégal - Galerie Excursion & Photos",
+    "Admirez la découverte du Sénégal en images. Galerie photos et vidéos de nos meilleures excursions : Sine-Saloum, Bandia, Gorée. Préparez votre prochaine excursion avec Sénégal Excursion."
   );
 
   const [items, setItems] = useState<GalleryItem[]>([]);

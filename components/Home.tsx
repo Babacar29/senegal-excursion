@@ -6,8 +6,8 @@ import { usePageSEO } from '../hooks/usePageSEO';
 
 const Home: React.FC = () => {
   usePageSEO(
-    "Chauffeur Privé Sénégal - Transfert AIBD & Excursions",
-    "Réservez votre chauffeur privé au Sénégal. Transferts Aéroport AIBD, excursions à Dakar, Mbour, Saly et l'île de Gorée. Meilleurs tarifs garantis, confort et sécurité 24/7."
+    "Sénégal Excursion - Découverte & Chauffeur Privé",
+    "Découvrez le Sénégal authentique. Vivez une expérience unique de découverte avec nos excursions sur mesure : Dakar, Gorée, Bandia et plus. Sénégal Excursion, votre guide de confiance."
   );
 
   return (
