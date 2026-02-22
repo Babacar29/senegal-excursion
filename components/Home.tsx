@@ -6,8 +6,8 @@ import { usePageSEO } from '../hooks/usePageSEO';
 
 const Home: React.FC = () => {
   usePageSEO(
-    "Accueil - Chauffeur Privé & Guide",
-    "Votre chauffeur privé et guide touristique au Sénégal. Découvrez Dakar, Gorée, Mbour et Saly en toute liberté. Transport confortable, circuits sur mesure et immersion locale garantie."
+    "Chauffeur Privé Sénégal - Transfert AIBD & Excursions",
+    "Réservez votre chauffeur privé au Sénégal. Transferts Aéroport AIBD, excursions à Dakar, Mbour, Saly et l'île de Gorée. Meilleurs tarifs garantis, confort et sécurité 24/7."
   );
 
   return (

@@ -6,8 +6,8 @@ import emailjs from '@emailjs/browser';
 
 const Contact: React.FC = () => {
   usePageSEO(
-    "Contact & Devis",
-    "Contactez votre chauffeur au Sénégal pour un devis gratuit. Réservation excursion ou transfert aéroport via WhatsApp, téléphone ou email. Réponse rapide et service personnalisé."
+    "Contact & Devis Gratuit - Sénégal Excursion Chauffeur",
+    "Besoin d'un chauffeur au Sénégal ? Demandez un devis gratuit pour vos excursions ou transferts. Prix fixes, contact rapide via WhatsApp ou formulaire. Réponse immédiate."
   );
 
   const formRef = useRef<HTMLFormElement>(null);

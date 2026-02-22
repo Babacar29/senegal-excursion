@@ -6,8 +6,8 @@ import { usePageSEO } from '../hooks/usePageSEO';
 
 const Gallery: React.FC = () => {
   usePageSEO(
-    "Destinations & Galerie",
-    "Visitez le Sénégal en images : Photos et vidéos de nos excursions à Bandia, Mbour, Village et Sine-Saloum. Découvrez les paysages authentiques qui vous attendent."
+    "Excursions au Sénégal en Images - Galerie Photos & Vidéos",
+    "Découvrez les plus beaux paysages du Sénégal : Gorée, Sine-Saloum, Bandia et Fathala. Visionnez notre galerie photos et vidéos pour préparer votre prochain voyage."
   );
 
   const [items, setItems] = useState<GalleryItem[]>([]);

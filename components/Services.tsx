@@ -5,8 +5,8 @@ import { usePageSEO } from '../hooks/usePageSEO';
 
 const Services: React.FC = () => {
   usePageSEO(
-    "Nos Services",
-    "Services de transport VTC Sénégal : Transfert aéroport AIBD, mise à disposition chauffeur à la journée, excursions touristiques et déplacements professionnels en berline ou 4x4."
+    "Nos Services & Tarifs Chauffeur Privé au Sénégal",
+    "Découvrez nos prestations de transport VTC au Sénégal : Transfert Aéroport AIBD, excursions touristiques et mise à disposition chauffeur. Tarifs fixes et transparents pour un voyage sans surprise."
   );
 
   const mainServices = [
