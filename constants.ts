@@ -14,17 +14,6 @@ export const MOCK_GALLERY: GalleryItem[] = [
     description: "Visite émouvante de l'île historique de Gorée."
   },
   {
-    id: '2',
-    collectionId: 'mock',
-    collectionName: 'gallery',
-    created: new Date().toISOString(),
-    updated: new Date().toISOString(),
-    title: "Récolte de Sel",
-    location: "Lac Rose",
-    image: "https://images.unsplash.com/photo-1623853876008-052601724031?q=80&w=1974&auto=format&fit=crop",
-    description: "Les couleurs uniques du Lac Retba."
-  },
-  {
     id: '3',
     collectionId: 'mock',
     collectionName: 'gallery',
@@ -34,17 +23,6 @@ export const MOCK_GALLERY: GalleryItem[] = [
     location: "Réserve de Bandia",
     image: "https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2068&auto=format&fit=crop",
     description: "Observation des girafes, rhinocéros et zèbres en liberté."
-  },
-  {
-    id: '4',
-    collectionId: 'mock',
-    collectionName: 'gallery',
-    created: new Date().toISOString(),
-    updated: new Date().toISOString(),
-    title: "Bivouac dans le Désert",
-    location: "Désert de Lompoul",
-    image: "https://images.unsplash.com/photo-1542401886-65d6c61db217?q=80&w=2070&auto=format&fit=crop",
-    description: "Nuit sous les étoiles dans les dunes de Lompoul."
   },
   {
     id: '5',

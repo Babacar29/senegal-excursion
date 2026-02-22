@@ -7,7 +7,7 @@ import { usePageSEO } from '../hooks/usePageSEO';
 const Gallery: React.FC = () => {
   usePageSEO(
     "Destinations & Galerie",
-    "Visitez le Sénégal en images : Photos et vidéos de nos excursions au Lac Rose, Bandia, Lompoul et Sine-Saloum. Découvrez les paysages authentiques qui vous attendent."
+    "Visitez le Sénégal en images : Photos et vidéos de nos excursions à Bandia, Mbour, Village et Sine-Saloum. Découvrez les paysages authentiques qui vous attendent."
   );
 
   const [items, setItems] = useState<GalleryItem[]>([]);
@@ -44,11 +44,11 @@ const Gallery: React.FC = () => {
   const categories: Category[] = [
     'Tous',
     'Dakar / Gorée',
-    'Lac Rose',
     'Sine-Saloum',
-    'Désert de Lompoul',
     'Fathala',
-    'Réserve de Bandia'
+    'Réserve de Bandia',
+    'Mbour',
+    'Village'
   ];
 
   const filteredItems = activeCategory === 'Tous'

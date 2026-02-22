@@ -11,16 +11,16 @@ const Services: React.FC = () => {
 
   const mainServices = [
     {
-      title: "Chauffeur Privé & Business",
-      description: "Un service de transport haut de gamme pour vos déplacements professionnels ou personnels à Dakar et dans tout le Sénégal. Profitez d'un véhicule climatisé, confortable et d'une conduite irréprochable.",
+      title: "Chauffeur Privé",
+      description: "Un service de transport pour vos déplacements à Dakar et dans tout le Sénégal. Profitez d'un véhicule climatisé, confortable et d'une conduite irréprochable.",
       image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2070&auto=format&fit=crop",
-      features: ["Berline ou 4x4 Climatisé", "Disponibilité 24/7", "Trajets longue distance", "Mise à disposition journée"]
+      features: ["Voiture Climatisée", "Disponibilité 24/7", "Trajets longue distance", "Mise à disposition journée"]
     },
     {
       title: "Excursions Touristiques",
-      description: "Découvrez les trésors cachés du Sénégal avec un expert local. Du Lac Rose à l'île de Gorée, en passant par le désert de Lompoul, laissez-vous guider à travers l'histoire et la nature.",
+      description: "Découvrez les trésors cachés du Sénégal avec un expert local. De Mbour à l'île de Gorée, en passant par la réserve de Bandia, laissez-vous guider à travers l'histoire et la nature.",
       image: "https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2068&auto=format&fit=crop",
-      features: ["Guide passionné", "Itinéraires sur mesure", "Immersion locale", "Prise en charge à l'hôtel"]
+      features: ["Guide passionné", "Itinéraires sur mesure", "Immersion locale", "Satisfaction garantie"]
     },
     {
       title: "Transfert Aéroport AIBD",
@@ -59,8 +59,8 @@ const Services: React.FC = () => {
                 <div className="relative transform transition-transform duration-500 hover:scale-[1.02]">
                   <div className={`absolute -inset-4 bg-brand-sunset/20 rounded-2xl transform ${index % 2 === 1 ? '-rotate-3' : 'rotate-3'} transition-transform group-hover:rotate-0`}></div>
                   <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
-                    <img 
-                      src={service.image} 
+                    <img
+                      src={service.image}
                       alt={service.title}
                       className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
                     />
@@ -73,17 +73,17 @@ const Services: React.FC = () => {
               <div className="w-full lg:w-1/2 space-y-8">
                 <div className="flex items-center gap-4">
                   <div className="p-3 bg-brand-dark text-brand-sunset rounded-lg shadow-md">
-                     {index === 0 && <Car size={24} />}
-                     {index === 1 && <Map size={24} />}
-                     {index === 2 && <Plane size={24} />}
+                    {index === 0 && <Car size={24} />}
+                    {index === 1 && <Map size={24} />}
+                    {index === 2 && <Plane size={24} />}
                   </div>
                   <h3 className="text-3xl font-serif font-bold text-brand-dark">{service.title}</h3>
                 </div>
-                
+
                 <p className="text-gray-600 text-lg leading-relaxed font-light">
                   {service.description}
                 </p>
-                
+
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {service.features.map((feature, i) => (
                     <li key={i} className="flex items-center gap-3 text-brand-dark font-medium">
@@ -94,7 +94,7 @@ const Services: React.FC = () => {
                 </ul>
 
                 <div className="pt-4">
-                  <Link 
+                  <Link
                     to="/contact"
                     className="inline-flex items-center gap-2 text-brand-accent font-bold uppercase tracking-wider hover:text-brand-dark transition-all group"
                   >
@@ -109,18 +109,18 @@ const Services: React.FC = () => {
 
         {/* Quality Badges */}
         <div className="mt-32 bg-white rounded-3xl shadow-xl border border-gray-100 p-12 relative overflow-hidden">
-           <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-brand-dark via-brand-sunset to-brand-dark"></div>
-           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-             {qualityBadges.map((badge, idx) => (
-               <div key={idx} className="flex flex-col items-center text-center space-y-4 group">
-                 <div className="p-4 bg-brand-sand rounded-full text-brand-dark group-hover:bg-brand-dark group-hover:text-brand-sunset transition-colors duration-300">
-                   {badge.icon}
-                 </div>
-                 <h4 className="font-serif font-bold text-xl text-brand-dark">{badge.title}</h4>
-                 <p className="text-gray-500 text-sm leading-relaxed max-w-xs">{badge.desc}</p>
-               </div>
-             ))}
-           </div>
+          <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-brand-dark via-brand-sunset to-brand-dark"></div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {qualityBadges.map((badge, idx) => (
+              <div key={idx} className="flex flex-col items-center text-center space-y-4 group">
+                <div className="p-4 bg-brand-sand rounded-full text-brand-dark group-hover:bg-brand-dark group-hover:text-brand-sunset transition-colors duration-300">
+                  {badge.icon}
+                </div>
+                <h4 className="font-serif font-bold text-xl text-brand-dark">{badge.title}</h4>
+                <p className="text-gray-500 text-sm leading-relaxed max-w-xs">{badge.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
       </div>

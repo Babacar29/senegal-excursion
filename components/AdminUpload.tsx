@@ -14,7 +14,7 @@ const AdminUpload: React.FC = () => {
 
   const navigate = useNavigate();
   const adminContext = useAdminContext();
-  
+
   // État local pour le formulaire
   const [file, setFile] = useState<File | null>(null);
   const [title, setTitle] = useState('');
@@ -50,13 +50,15 @@ const AdminUpload: React.FC = () => {
   }, [adminContext.isLoggedIn]);
 
   const locationOptions = [
-    'Dakar / Gorée', 'Lac Rose', 'Sine-Saloum',
-    'Désert de Lompoul', 'Fathala', 'Réserve de Bandia', 'Autre'
+    'Dakar / Gorée', 'Sine-Saloum',
+    'Fathala', 'Réserve de Bandia',
+    'Mbour', 'Village', 'Autre'
   ];
 
   const categories: Category[] = [
-    'Tous', 'Dakar / Gorée', 'Lac Rose', 'Sine-Saloum',
-    'Désert de Lompoul', 'Fathala', 'Réserve de Bandia'
+    'Tous', 'Dakar / Gorée', 'Sine-Saloum',
+    'Fathala', 'Réserve de Bandia',
+    'Mbour', 'Village'
   ];
 
   const filteredGalleryItems = useMemo(() => {
@@ -115,7 +117,7 @@ const AdminUpload: React.FC = () => {
 
     try {
       await uploadGalleryItem(formData);
-      
+
       // Log l'action admin
       await logAdminAction('gallery_upload', {
         title,
@@ -124,7 +126,7 @@ const AdminUpload: React.FC = () => {
         fileSize: file.size,
         description,
       });
-      
+
       setUploadSuccess(true);
       setTitle('');
       setLocation('');
@@ -150,7 +152,7 @@ const AdminUpload: React.FC = () => {
         title: deletedItem?.title,
         location: deletedItem?.location,
       });
-      
+
       setGalleryItems(prev => prev.filter(item => item.id !== id));
     }
     setDeletingId(null);
@@ -187,7 +189,7 @@ const AdminUpload: React.FC = () => {
         location: editLocation,
         fileChanged: !!editFile,
       });
-      
+
       setGalleryItems(prev => prev.map(item => item.id === updated.id ? updated : item));
       setEditingItem(null);
     }
@@ -214,8 +216,8 @@ const AdminUpload: React.FC = () => {
                 Espace Admin
               </h1>
               <p className="text-gray-500 mt-1">
-                {isLoggedIn 
-                  ? `Connecté en tant que ${adminContext.currentUser?.email}` 
+                {isLoggedIn
+                  ? `Connecté en tant que ${adminContext.currentUser?.email}`
                   : "Connexion requise"}
               </p>
             </div>

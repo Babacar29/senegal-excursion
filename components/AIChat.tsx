@@ -6,7 +6,7 @@ import { ChatMessage } from '../types';
 const AIChat: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([
-    { role: 'model', text: 'Bonjour ! Je suis l\'assistant de Senegal Excursion. Je peux vous aider à choisir une destination (Lac Rose, Lompoul, Bandia...) ou répondre à vos questions.' }
+    { role: 'model', text: 'Bonjour ! Je suis l\'assistant de Senegal Excursion. Je peux vous aider à choisir une destination (Mbour, Bandia...) ou répondre à vos questions.' }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -30,7 +30,7 @@ const AIChat: React.FC = () => {
     setIsLoading(true);
 
     const responseText = await generateTravelResponse(userText);
-    
+
     setMessages(prev => [...prev, { role: 'model', text: responseText }]);
     setIsLoading(false);
   };
@@ -45,7 +45,7 @@ const AIChat: React.FC = () => {
           aria-label="Ouvrir l'assistant"
         >
           <div className="absolute -top-1 -right-1">
-             <span className="relative flex h-3 w-3">
+            <span className="relative flex h-3 w-3">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-sunset opacity-75"></span>
               <span className="relative inline-flex rounded-full h-3 w-3 bg-brand-accent"></span>
             </span>
@@ -84,11 +84,10 @@ const AIChat: React.FC = () => {
                 className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
               >
                 <div
-                  className={`max-w-[85%] p-3 rounded-2xl text-sm leading-relaxed ${
-                    msg.role === 'user'
+                  className={`max-w-[85%] p-3 rounded-2xl text-sm leading-relaxed ${msg.role === 'user'
                       ? 'bg-brand-dark text-white rounded-br-none'
                       : 'bg-white border border-gray-200 text-gray-800 rounded-bl-none shadow-sm'
-                  }`}
+                    }`}
                 >
                   {msg.text}
                 </div>

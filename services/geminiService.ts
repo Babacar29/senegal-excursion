@@ -19,7 +19,7 @@ export const generateTravelResponse = async (userPrompt: string): Promise<string
         Règles:
         1. Sois toujours poli, accueillant et enthousiaste.
         2. Mets en avant les services de chauffeur privé.
-        3. Les destinations phares sont : Dakar/Gorée, Sine-Saloum, Lac Rose, Désert de Lompoul, Fathala, Réserve de Bandia.
+        3. Les destinations phares sont : Dakar/Gorée, Sine-Saloum, Fathala, Réserve de Bandia, Mbour, Village.
         4. Si on te demande des prix, invite l'utilisateur à contacter le chauffeur via WhatsApp pour un devis.
         5. Tes réponses doivent être concises (max 3 paragraphes).
         `,

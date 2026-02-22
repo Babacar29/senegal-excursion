@@ -18,14 +18,14 @@ export interface GalleryItem {
   description?: string;
 }
 
-export type Category = 
-  | 'Tous' 
-  | 'Dakar / Gorée' 
-  | 'Sine-Saloum' 
-  | 'Lac Rose' 
-  | 'Désert de Lompoul' 
-  | 'Fathala' 
+export type Category =
+  | 'Tous'
+  | 'Dakar / Gorée'
+  | 'Sine-Saloum'
+  | 'Fathala'
   | 'Réserve de Bandia'
+  | 'Mbour'
+  | 'Village'
   | 'Autre';
 
 export interface ChatMessage {

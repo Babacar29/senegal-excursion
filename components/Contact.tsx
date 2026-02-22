@@ -46,8 +46,8 @@ const Contact: React.FC = () => {
     setIsSubmitting(true);
     setStatus({ type: null, message: '' });
 
-  
-    
+
+
     try {
       if (formRef.current) {
         await emailjs.sendForm(
@@ -56,15 +56,15 @@ const Contact: React.FC = () => {
           formRef.current,
           { publicKey: PUBLIC_KEY }
         );
-        
+
         setStatus({ type: 'success', message: 'Message envoyé avec succès ! Je vous recontacterai très bientôt.' });
         setFormData({ name: '', email: '', phone: '', message: '' });
       }
     } catch (error) {
       console.error('Erreur EmailJS:', error);
-      setStatus({ 
-        type: 'error', 
-        message: "Une erreur est survenue lors de l'envoi. Veuillez réessayer ou utiliser WhatsApp." 
+      setStatus({
+        type: 'error',
+        message: "Une erreur est survenue lors de l'envoi. Veuillez réessayer ou utiliser WhatsApp."
       });
     } finally {
       setIsSubmitting(false);
@@ -77,27 +77,27 @@ const Contact: React.FC = () => {
 
   return (
     <section className="min-h-screen pt-32 pb-24 bg-brand-sand relative">
-       {/* Header */}
-       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 text-center">
+      {/* Header */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 text-center">
         <h2 className="text-sm text-brand-accent font-bold tracking-[0.2em] uppercase mb-3">Contact</h2>
         <h1 className="font-serif text-4xl md:text-5xl font-bold text-brand-dark mb-6">
           Planifions votre <span className="text-brand-sunset">Voyage</span>
         </h1>
         <p className="max-w-2xl mx-auto text-gray-600">
-          Une question sur une destination ? Besoin d'un chauffeur pour demain ? 
+          Une question sur une destination ? Besoin d'un chauffeur pour demain ?
           Remplissez le formulaire ou contactez-moi directement.
         </p>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          
+
           {/* Left Column: Direct Contact Info */}
           <div className="space-y-8">
             {/* Quick Contact Cards */}
             <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
               <h3 className="font-serif text-2xl font-bold mb-6 text-brand-dark">Coordonnées</h3>
-              
+
               <div className="space-y-6">
                 <a href={`tel:${CONTACT_PHONE}`} className="flex items-center gap-5 group p-4 rounded-xl hover:bg-gray-50 transition-colors">
                   <div className="p-3 bg-brand-sunset/20 rounded-full text-brand-dark group-hover:bg-brand-sunset transition-colors">
@@ -133,18 +133,18 @@ const Contact: React.FC = () => {
 
             {/* WhatsApp CTA */}
             <div className="bg-brand-dark rounded-2xl shadow-xl p-8 text-center relative overflow-hidden group">
-               <div className="absolute top-0 right-0 w-32 h-32 bg-brand-sunset/10 rounded-full blur-3xl group-hover:bg-brand-sunset/20 transition-all"></div>
-               <MessageCircle size={48} className="mx-auto text-brand-sunset mb-4" />
-               <h3 className="text-white font-serif text-2xl font-bold mb-2">WhatsApp Direct</h3>
-               <p className="text-gray-400 mb-6 text-sm">Réponse rapide garantie pour vos urgences ou réservations.</p>
-               <a 
+              <div className="absolute top-0 right-0 w-32 h-32 bg-brand-sunset/10 rounded-full blur-3xl group-hover:bg-brand-sunset/20 transition-all"></div>
+              <MessageCircle size={48} className="mx-auto text-brand-sunset mb-4" />
+              <h3 className="text-white font-serif text-2xl font-bold mb-2">WhatsApp Direct</h3>
+              <p className="text-gray-400 mb-6 text-sm">Réponse rapide garantie pour vos urgences ou réservations.</p>
+              <a
                 href={waLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 w-full bg-brand-sunset text-brand-dark py-3 rounded-full font-bold hover:bg-brand-accent transition-colors"
-               >
-                 Discuter maintenant <ArrowRight size={18} />
-               </a>
+              >
+                Discuter maintenant <ArrowRight size={18} />
+              </a>
             </div>
           </div>
 
@@ -221,16 +221,15 @@ const Contact: React.FC = () => {
                   value={formData.message}
                   onChange={handleChange}
                   className="block w-full rounded-lg border border-gray-300 px-4 py-3 focus:ring-2 focus:ring-brand-sunset focus:border-transparent outline-none transition-shadow bg-gray-50 focus:bg-white"
-                  placeholder="Je souhaiterais visiter le Lac Rose..."
+                  placeholder="Je souhaiterais visiter Mbour..."
                 ></textarea>
               </div>
 
               {status.message && (
-                <div className={`p-4 rounded-lg flex items-start gap-2 ${
-                  status.type === 'success' ? 'bg-green-50 text-green-700 border border-green-200' : 'bg-red-50 text-red-700 border border-red-200'
-                }`}>
-                   {status.type === 'error' && <AlertCircle size={20} className="shrink-0 mt-0.5" />}
-                   <p className="text-sm font-medium">{status.message}</p>
+                <div className={`p-4 rounded-lg flex items-start gap-2 ${status.type === 'success' ? 'bg-green-50 text-green-700 border border-green-200' : 'bg-red-50 text-red-700 border border-red-200'
+                  }`}>
+                  {status.type === 'error' && <AlertCircle size={20} className="shrink-0 mt-0.5" />}
+                  <p className="text-sm font-medium">{status.message}</p>
                 </div>
               )}
 
