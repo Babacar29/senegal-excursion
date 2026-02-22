@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Disallow admin routes
+Disallow: /admin
+Disallow: /admin-login
+
+Sitemap: https://senegal-excursion.com/sitemap.xml

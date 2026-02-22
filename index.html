@@ -1,42 +1,84 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sénégal Excursion - Explorez l'authenticité</title>
-    <meta name="description" content="Découvrez le Sénégal avec un chauffeur professionnel. Excursions à Mbour, Gorée, Saint-Louis et plus." />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Poppins', 'sans-serif'],
-              serif: ['Playfair Display', 'serif'],
-            },
-            colors: {
-              brand: {
-                sunset: '#FDB813', // Warm yellow/orange from the sun in the logo
-                dark: '#1a1a1a',   // Silhouette black
-                sand: '#f8f5f2',   // Light background color
-                accent: '#E09900'  // Darker shade of sunset for hovers
-              }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sénégal Excursion - Explorez l'authenticité</title>
+  <meta name="description"
+    content="Découvrez le Sénégal avec un chauffeur professionnel. Excursions à Mbour, Gorée, Saint-Louis et plus." />
+  <link rel="canonical" href="https://senegal-excursion.com/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://senegal-excursion.com/" />
+  <meta property="og:title" content="Sénégal Excursion - Explorez l'authenticité" />
+  <meta property="og:description"
+    content="Découvrez le Sénégal avec un chauffeur professionnel. Excursions à Mbour, Gorée, Saint-Louis et plus." />
+  <meta property="og:image" content="https://senegal-excursion.com/chauffeur.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://senegal-excursion.com/" />
+  <meta property="twitter:title" content="Sénégal Excursion - Explorez l'authenticité" />
+  <meta property="twitter:description"
+    content="Découvrez le Sénégal avec un chauffeur professionnel. Excursions à Mbour, Gorée, Saint-Louis et plus." />
+  <meta property="twitter:image" content="https://senegal-excursion.com/chauffeur.png" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "Sénégal Excursion",
+      "description": "Service de chauffeur privé et guide touristique au Sénégal. Excursions et transferts aéroport.",
+      "url": "https://senegal-excursion.com/",
+      "logo": "https://senegal-excursion.com/chauffeur.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mbour",
+        "addressCountry": "SN"
+      },
+      "priceRange": "$$",
+      "openingHours": "Mo-Su 00:00-23:59"
+    }
+    </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            brand: {
+              sunset: '#FDB813', // Warm yellow/orange from the sun in the logo
+              dark: '#1a1a1a',   // Silhouette black
+              sand: '#f8f5f2',   // Light background color
+              accent: '#E09900'  // Darker shade of sunset for hovers
             }
           }
         }
       }
-    </script>
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-      .font-serif-logo {
-        letter-spacing: 0.1em;
-      }
-    </style>
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .font-serif-logo {
+      letter-spacing: 0.1em;
+    }
+  </style>
   <script type="importmap">
 {
   "imports": {
@@ -51,10 +93,12 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-brand-sand text-brand-dark antialiased">
-    <div id="root"></div>
+
+<body class="bg-brand-sand text-brand-dark antialiased">
+  <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
+
 </html>
