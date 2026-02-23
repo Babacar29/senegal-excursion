@@ -6,8 +6,8 @@ import emailjs from '@emailjs/browser';
 
 const Contact: React.FC = () => {
   usePageSEO(
-    "Contact & Devis Excursion Sénégal - Découverte Locale",
-    "Planifiez votre découverte du Sénégal. Contactez-nous pour organiser votre excursion sur mesure. Sénégal Excursion : transport, guide et découverte garantis."
+    "Contactez-nous - Devis Excursion & Chauffeur Sénégal",
+    "Réservez votre excursion au Sénégal. Contactez Sénégal Excursion pour un devis personnalisé, chauffeur privé, safaris et immersion culturelle. Réponse rapide garantie +221785216296."
   );
 
   const formRef = useRef<HTMLFormElement>(null);

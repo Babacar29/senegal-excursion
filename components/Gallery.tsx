@@ -6,8 +6,8 @@ import { usePageSEO } from '../hooks/usePageSEO';
 
 const Gallery: React.FC = () => {
   usePageSEO(
-    "Découverte du Sénégal - Galerie Excursion & Photos",
-    "Admirez la découverte du Sénégal en images. Galerie photos et vidéos de nos meilleures excursions : Sine-Saloum, Bandia, Gorée. Préparez votre prochaine excursion avec Sénégal Excursion."
+    "Galerie Photos & Vidéos - Destinations Excursion Sénégal",
+    "Galerie complète de nos excursions au Sénégal. Photos HD et vidéos des destinations : île de Gorée, réserve de Bandia, fleuve Sine-Saloum, Dakar, safaris. Inspirez-vous pour votre voyage."
   );
 
   const [items, setItems] = useState<GalleryItem[]>([]);

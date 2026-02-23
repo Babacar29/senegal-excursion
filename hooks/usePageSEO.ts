@@ -2,9 +2,9 @@ import { useEffect } from 'react';
 
 export const usePageSEO = (title: string, description: string, image?: string) => {
   useEffect(() => {
-    const siteName = "Senegal Excursion";
+    const siteName = "Sénégal Excursion";
     const fullTitle = `${title} | ${siteName}`;
-    const imageUrl = image || "https://senegal-excursion.com/chauffeur.png";
+    const imageUrl = image || "https://senegaldecouvertexcursions.com/chauffeur.png";
 
     // Update Document Title
     document.title = fullTitle;

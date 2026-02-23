@@ -6,8 +6,8 @@ import { usePageSEO } from '../hooks/usePageSEO';
 
 const Home: React.FC = () => {
   usePageSEO(
-    "Sénégal Excursion - Découverte & Chauffeur Privé",
-    "Découvrez le Sénégal authentique. Vivez une expérience unique de découverte avec nos excursions sur mesure : Dakar, Gorée, Bandia et plus. Sénégal Excursion, votre guide de confiance."
+    "Sénégal Excursion - Chauffeur Privé & Excursions Authentiques",
+    "Explorez le Sénégal avec un guide passionné. Services de chauffeur privé à Dakar, excursions à Gorée, Bandia, Sine-Saloum. Découverte culturelle & immersion totale garanties avec Sénégal Excursion."
   );
 
   return (

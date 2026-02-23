@@ -5,4 +5,10 @@ Allow: /
 Disallow: /admin
 Disallow: /admin-login
 
-Sitemap: https://senegal-excursion.com/sitemap.xml
+Sitemap: https://senegaldecouvertexcursions.com/sitemap.xml
+
+Crawl-delay: 1
+Request-rate: 30/60
+
+# Announce domain change
+Host: https://senegaldecouvertexcursions.com

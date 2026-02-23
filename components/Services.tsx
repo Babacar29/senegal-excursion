@@ -5,8 +5,8 @@ import { usePageSEO } from '../hooks/usePageSEO';
 
 const Services: React.FC = () => {
   usePageSEO(
-    "Excursion Sénégal - Découverte & Services de Transport",
-    "Découvrez nos excursions au Sénégal et profitez d'une immersion locale totale. Découverte de paysages uniques, transferts sécurisés et services de chauffeur pour vos excursions."
+    "Services Chauffeur Privé & Excursions Sénégal",
+    "Services de chauffeur privé 24/7 à Dakar et au Sénégal. Excursions touristiques à Gorée, Bandia, Sine-Saloum. Transferts aéroport AIBD, safaris et guide passionné pour découverte authentique."
   );
 
   const mainServices = [
