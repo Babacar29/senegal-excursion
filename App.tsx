@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Services from './components/Services';
@@ -34,6 +34,7 @@ function AppContent() {
             <Route path="/services" element={<Services />} />
             <Route path="/destinations" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/tarifs" element={<Navigate to="/" replace />} />
             <Route path="/admin-login" element={<AdminLogin />} />
             <Route
               path="/admin"
